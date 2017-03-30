@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>My Node Site</title>
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "css/styles.css">
+	</head>
+	<body>
+		<header>
+		<nav class = "navbar navbar-inverse">
+			<a href = "/" class = "navbar-brand">My Site</a>
+			<ul>
+				<li><a href = "/">Home</a></li>
+				<li><a href = "/about">About</a></li>
+				<li><a href = "/contact">Contact</a></li>
+			</ul>
+		</nav>
+		</header>
+
+		<!--Main Content here -->
+
+		<%- defineContent('hero') %>
+		<main>
+			<div class = "container">
+				<%- body %>
+			</div>
+		</main>
+
+		<footer>
+			Awesome Site. Copyright &copy; 2016
+		</footer>
+	</body>
+</html>
